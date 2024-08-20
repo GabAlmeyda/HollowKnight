@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --cor-fundo: #191919;
+    --cor-margem: #0A0A0A;
+
+    --cor-padrao-1: #00043E;
+    --cor-padrao-2: #000986;
+    --cor-padrao-3: #0010F5;
+    
+    --cor-selecao: #0010f55d;
+
+    --cor-destaque: #F5BD05;
+    --cor-link-visitado: #A202F0;
+
+    --fonte-titulo-header: "Bebas Neue", "Times New Roman", serif;
+    --fonte-titulo: "Cinzel", "Times New Roman", Roman, serif;
+    --fonte-padrao: Lato, Arial, Helvetica, sans-serif;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--cor-margem);
+}
+
+header {
+    padding: 20px 30px 50px;
+    min-height: 100px;
+    background-image: linear-gradient(to bottom, var(--cor-padrao-2), var(--cor-padrao-1));
+    text-align: center;
+}
+
+header h1, header p {
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    padding: 0 15px;
+    font-family: var(--fonte-titulo-header);
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+header p {
+    padding: 0 15px;
+    font-size: 1.1em;
+    font-family: var(--fonte-padrao);
+}
+
+nav {
+    padding: 10px;
+    box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.212);
+    background-color: var(--cor-padrao-1);
+}
+
+nav a {
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+    font-size: 0.9em;
+
+}
+
+nav a:hover {
+    background-color: var(--cor-padrao-2);
+    text-decoration: underline;
+    transition: 150ms;
+}
+
+nav a:active {
+    background-color: var(--cor-padrao-3);
+}
+
+main {
+    margin: auto;
+    border-radius: 0 0 10px 10px;
+    padding: 15px;
+    max-width: 1000px;
+    min-width: 300px;
+    background-color: var(--cor-fundo);
+}
+
+main h1, main h2, main h3 {
+    padding: 3px 0px 3px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: var(--fonte-titulo);
+}
+
+main h1 {
+    margin-top: 1.5em;
+    background-image: linear-gradient(to right, var(--cor-padrao-3), transparent);
+    font-size: 1.8em;
+    font-weight: 800;
+}
+
+main h2 {
+    margin-top: 1.3em;
+    background-image: linear-gradient(to right, var(--cor-padrao-2), transparent);
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+main p {
+    margin-bottom: 20px;
+    color: white;
+    text-indent: 1.7em;
+    text-align: justify;
+    font-family: var(--fonte-padrao);
+    line-height: 1.8em;
+}
+
+main strong {
+    margin: 1px;
+    padding: 3px 5px;
+    border-radius: 3px;
+    background-color: var(--cor-selecao);
+    color: white;
+}
+
+main a {
+    padding: 1px 3px;
+    border-radius: 3px;
+    margin: 2px;
+    background-color: var(--cor-destaque);
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+main a:visited {
+    background-color: var(--cor-link-visitado);
+}
+
+main a::after {
+    content: " ↗️";
+}
+
+picture, img {
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.foto-responsiva, .foto-unica {
+    text-align: center;
+}
+
+div.foto-unica {
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.foto-unica img {
+    width: 90%;
+}
+.foto-responsiva * {
+    margin-bottom: 20px;
+    width: 70%;
+}
+
+div.foto-unica > hr {
+    margin: 20px;
+}
+
+div.foto-responsiva > hr {
+    margin-bottom: 20px;
+}
+
+aside {
+    border-radius: 10px;
+    background-color: var(--cor-padrao-1);
+    padding: 15px;
+    margin: 20px;
+    margin-top: 30px;
+}
+
+aside > h2 {
+    background-image: linear-gradient(to right, var(--cor-padrao-3), var(--cor-padrao-2));
+    margin: -15px;
+    margin-bottom: 10px;
+}
+
+aside  strong {
+    background-color: var(--cor-destaque);
+    color: black;
+}
+
+footer {
+    padding: 8px;
+    margin-top: 10px;
+    background-color: var(--cor-padrao-3);
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
