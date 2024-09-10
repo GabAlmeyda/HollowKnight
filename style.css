@@ -99,6 +99,7 @@ main h1, main h2, main h3 {
     margin-bottom: 10px;
     color: white;
     font-family: var(--fonte-titulo);
+    font-variant: small-caps;
 }
 
 main h1 {
@@ -154,35 +155,61 @@ main a::after {
     content: " ↗️";
 }
 
-picture, img {
+picture, div.parallax, div.boss img{
     border-radius: 10px;
-    margin-top: 20px;
+    margin: 15px 0 20px 0;
 }
 
-.foto-responsiva, .foto-unica {
+main div#banner {
     text-align: center;
 }
 
-div.foto-unica {
+main div#banner img {
+    width: 90%;
     margin: auto;
     margin-bottom: 15px;
+    border-radius: 10px;
 }
 
-.foto-unica img {
-    width: 90%;
-}
-.foto-responsiva * {
-    margin-bottom: 20px;
-    width: 70%;
+main div#banner > hr {
+    margin: 30px;
 }
 
-div.foto-unica > hr {
-    margin: 20px;
+main div.parallax {
+    height: 90vh;
+    box-shadow: inset 0px 5px 5px #0000009c
 }
 
-div.foto-responsiva > hr {
-    margin-bottom: 20px;
+main #encruzilhada-esquecida .parallax {
+    background: midnightblue url("images/A-encruzilhada-esquecida.png") no-repeat fixed center / cover;
 }
+
+main div.boss {
+    text-align: center;
+}
+
+main div.boss img {
+    width: 100%;
+    max-width: 700px;
+}
+
+main #caminho-verde .parallax {
+    background: green url("images/A-caminho-verde.jpg") no-repeat fixed center / cover;
+}
+
+main #ermos-fungicos .parallax {
+    background: pink url("images/A-ermos-fundicos.png") no-repeat fixed center / cover;
+}
+
+main #ninho-profundo .parallax {
+    background: gray url("images/A-ninho-profundo.png") no-repeat fixed center / cover;
+}
+
+main #cidade-das-lagrimas .parallax {
+    background: lightskyblue url("images/A-cidade-das-lagrimas.png") no-repeat fixed center / cover;
+}
+
+main section
 
 aside {
     border-radius: 10px;
@@ -190,6 +217,15 @@ aside {
     padding: 15px;
     margin: 20px;
     margin-top: 30px;
+}
+
+aside div#silksong{
+    text-align: center;
+}
+
+aside div#silksong img {
+    width: 100%;
+    margin: auto;
 }
 
 aside > h2 {
