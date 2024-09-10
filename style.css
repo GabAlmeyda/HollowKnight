@@ -194,7 +194,7 @@ main div.boss img {
 }
 
 main #caminho-verde .parallax {
-    background: green url("images/A-caminho-verde.jpg") no-repeat fixed center / cover;
+    background: green url("images/A-caminho-verde.jpg") no-repeat fixed center bottom / cover;
 }
 
 main #ermos-fungicos .parallax {
@@ -206,7 +206,7 @@ main #ninho-profundo .parallax {
 }
 
 main #cidade-das-lagrimas .parallax {
-    background: lightskyblue url("images/A-cidade-das-lagrimas.png") no-repeat fixed center / cover;
+    background: lightskyblue url("images/A-cidade-das-lagrimas.png") no-repeat fixed center top / cover;
 }
 
 main section
