@@ -120,7 +120,7 @@ main p {
     margin-bottom: 20px;
     color: white;
     text-indent: 1.7em;
-    text-align: justify;
+    text-align: left;
     font-family: var(--fonte-padrao);
     line-height: 1.8em;
 }
@@ -209,14 +209,11 @@ main #cidade-das-lagrimas .parallax {
     background: lightskyblue url("images/A-cidade-das-lagrimas.png") no-repeat fixed center top / cover;
 }
 
-main section
-
 aside {
     border-radius: 10px;
-    background-color: var(--cor-padrao-1);
     padding: 15px;
-    margin: 20px;
     margin-top: 30px;
+    background-color: var(--cor-padrao-1);  
 }
 
 aside div#silksong{
@@ -226,12 +223,15 @@ aside div#silksong{
 aside div#silksong img {
     width: 100%;
     margin: auto;
+    border-radius: 10px;
 }
 
-aside > h2 {
-    background-image: linear-gradient(to right, var(--cor-padrao-3), var(--cor-padrao-2));
+aside > h3 {
     margin: -15px;
     margin-bottom: 10px;
+    padding: 5px;
+    background-image: linear-gradient(to right, var(--cor-padrao-3), var(--cor-padrao-2));
+    font-size: 1.25em;
 }
 
 aside  strong {
